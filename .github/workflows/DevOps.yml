@@ -18,11 +18,11 @@ jobs:
       
       - name: build py app
         run: |
-          python3 Main.py -o first.o
+          python3 Main.py -o first.exe
     
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: py_app
-          path: first.o
+          path: first.exe
           retention-days: 7
