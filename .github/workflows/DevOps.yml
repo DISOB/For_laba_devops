@@ -25,4 +25,4 @@ jobs:
         with:
           name: py_app
           path: first.o
-          retetion-days: 7
+          retention-days: 7
