@@ -18,7 +18,7 @@ jobs:
       
       - name: build py app
         run: |
-          g++ Main.py -o first.o
+          python3 Main.py -o first.o
     
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
