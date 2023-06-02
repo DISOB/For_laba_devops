@@ -1,4 +1,4 @@
-name: build cpp laba
+name: build py laba
 
 on:
   push:
@@ -9,20 +9,20 @@ on:
   workflow_dispatch:
       
 jobs:
-  build_cpp_file:
+  build_py_file:
     runs-on: macos-latest
 
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
       
-      - name: build cpp app
+      - name: build py app
         run: |
           g++ Main.py -o first.o
     
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: cpp_app
+          name: py_app
           path: first.o
           retetion-days: 7
